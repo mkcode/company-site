@@ -37,3 +37,19 @@ class AmoebaSite.Views.Homepage extends Amoeba.View
 
   hideFooter: (animationTime = 0) ->
     $("#footer").disolveOut(animationTime)
+
+  showView: () ->
+    @mascot.show()
+    @$el.disolveIn()
+
+  hideView: () ->
+    @mascot.hide()
+    @$el.disolveOut()
+
+    # hiding stuff, not sure if this is the best way or not
+    this.hideHeader()
+    this.hideFooter()
+
+    # setting this to undefined so next time it's shown and transition is called it should set things up properly
+    @currentSubView = undefined
+
