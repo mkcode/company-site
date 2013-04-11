@@ -22,7 +22,9 @@ class AmoebaSite.Presentation.Controller
 #      new AmoebaSite.Presentation.Slide_Cog(),
     ]
 
-    @transAPI = new AmoebaSB.SlideTransitions(@slides)
+    @audioAPI = new AmoebaSB.SlideAudioTransitions(@slides)
+    window.sba = @audioAPI
+    @transAPI = new AmoebaSB.SlideTransitions(@slides, @audioAPI)
 
     @navigationControls = new AmoebaSB.NavigationControls(@slides.length, false, false)
 
