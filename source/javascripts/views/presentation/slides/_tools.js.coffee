@@ -9,6 +9,8 @@ class AmoebaSite.Presentation.Slide_Tools extends AmoebaSB.Slide_Base
     @toolTopOffset = 30
     @rotateTransformOrigin = '28% bottom 0'
 
+    @sound_url = "/sounds/rythym-loop2.mp3"
+
     @$items = this._buildTools()
 
     @width = AmoebaSB.layout.slideWidth

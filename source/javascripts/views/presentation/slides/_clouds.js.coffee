@@ -4,6 +4,8 @@ class AmoebaSite.Presentation.Slide_Clouds extends AmoebaSB.Slide_Base
     this._setupElement("cloudsSlide")
     @transition = 'down'
 
+    @sound_url = "/sounds/chorus-loop.mp3"
+
   slideIn: (afterTransitionComplete) =>
     if !afterTransitionComplete
       AmoebaSite.presentation.setBackground('blue')
@@ -24,4 +26,3 @@ class AmoebaSite.Presentation.Slide_Clouds extends AmoebaSB.Slide_Base
   # called when cloud controller finishes it's animation sequence
   _cloudControllerCallback: () =>
     this._slideIsDone(1000)
-

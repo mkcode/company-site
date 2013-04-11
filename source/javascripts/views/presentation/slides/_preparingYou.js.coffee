@@ -6,6 +6,8 @@ class AmoebaSite.Presentation.Slide_PreparingYou extends AmoebaSB.Slide_Base
     this._setupElement("preparingYouSlide")
     @transition = 'zoom'
 
+    @sound_url = "/sounds/rythym-loop.mp3"
+
   slideIn: (afterTransitionComplete) =>
     if afterTransitionComplete
       this._start()
@@ -725,4 +727,3 @@ class AmoebaSite.Presentation.RotationController
         y:-180
         z:180
       ]
-

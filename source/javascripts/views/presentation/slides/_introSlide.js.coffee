@@ -3,8 +3,8 @@ class AmoebaSite.Presentation.Slide_Intro extends AmoebaSB.Slide_Base
   setup: ->
     this._setupElement("introSlide")
     @transition = 'zoom'
-    
-    @sound_uri = 'intro-loop.mp3'
+
+    @sound_url = '/sounds/intro-loop.mp3'
     @sound_transition = 'immediate'
 
     dark = true
